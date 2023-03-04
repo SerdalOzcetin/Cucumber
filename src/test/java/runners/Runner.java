@@ -8,7 +8,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
 
         //features folder path                          // stepdefinition path
-        features = "C:\\Users\\asus\\IdeaProjects\\Cucumber\\src\\test\\resources\\features\\firstfeaturefile.feature",   glue =  "stepdefinitions"
+        features = "C:\\Users\\asus\\IdeaProjects\\Cucumber\\src\\test\\resources\\features\\firstfeaturefile.feature",
+        glue =  "stepdefinitions",
+        tags = "@Google_Search"
 )
 public class Runner {
 

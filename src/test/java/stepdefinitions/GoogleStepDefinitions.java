@@ -34,5 +34,24 @@ GooglePage googlePage = new GooglePage();
 
     }
 
+    @Then("Close the application")
+    public void close_the_application() {
+
+        Driver.closeDriver();
+
+    }
+
+
+    @When("User searchs Volvo ın searchbox")
+    public void user_searchs_volvo_ın_searchbox() {
+        googlePage.searchBox.sendKeys("Volvo" + Keys.ENTER);
+    }
+    @Then("Verify the results contain Volvo")
+    public void verify_the_results_contain_volvo() {
+        String title = Driver.getDriver().getTitle();
+        String expected = "Volvo";
+        Assert.assertTrue(title.contains(expected));
+    }
+
 
 }

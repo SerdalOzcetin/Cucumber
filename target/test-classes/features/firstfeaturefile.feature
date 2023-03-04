@@ -5,7 +5,16 @@ Feature: First feature file
     Given User goes to Google
     When User searchs Iphone ın searchbox
     Then Assert the results contain Iphone
+    And Close the application
 
+
+    @Volvo
+  Scenario: TC02_Google_Volvo_search
+
+    Given  User goes to Google
+    When User searchs Volvo ın searchbox
+    Then Verify the results contain Volvo
+    And Close the application
 
 
     # 1. Her feature file, Feature: kelimesi ile başlamak zorundadğr
