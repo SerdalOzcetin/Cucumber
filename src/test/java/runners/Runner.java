@@ -7,15 +7,12 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 
-        //features folder path                          // stepdefinition path
-        features = "C:\\Users\\asus\\IdeaProjects\\Cucumber\\src\\test\\resources\\features\\firstfeaturefile.feature",
-        glue =  "stepdefinitions",
-        tags = "@Google_Search"
+        features = "./src/test/resources/features",  //features folder path
+        glue =  "stepdefinitions",                   // stepdefinition path
+        tags = "@Scenario_Outline_01",
+        dryRun = false
 )
 public class Runner {
-
-
-
 
     // BU sinif Test çaseleri RUN etmek icin kullanilir
     // Ve konfiguraşyonlar icin kullanilir

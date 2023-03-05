@@ -53,5 +53,22 @@ GooglePage googlePage = new GooglePage();
         Assert.assertTrue(title.contains(expected));
     }
 
+    @When("User searchs for {string} ın searchbox")
+    public void user_searchs_for_ın_searchbox(String string) {
+
+        googlePage.searchBox.sendKeys(string + Keys.ENTER);
+
+    }
+
+    @Then("Verify the results contain {string}")
+    public void verify_the_results_contain(String string) {
+
+        String title = Driver.getDriver().getTitle();
+        Assert.assertTrue(title.contains(string));
+
+    }
+
+
+
 
 }
