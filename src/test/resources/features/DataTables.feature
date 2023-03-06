@@ -18,8 +18,8 @@ Feature: Data_Tables_Personal_Credentials
 
     Examples:Credentials
       | FirstName | LastName | Position | Office    | Extension | Start Date | Salary |
-      | Snm       | ctn      | QA       | Izmir     | 1234      | 2023-03-08 | 100000 |
-      | Srdl      | ctn      | QA       | Balikesir | 12348     | 2023-04-08 | 200000 |
-      | Slck      | Tstn     | tester   | izmir     | 4567      | 2023-04-09 | 40000  |
-      | Tb        | Cck      | tester   | izmir     | 4567      | 2023-07-09 | 60000  |
-      | Smt       | ctn      | sdet     | Balikesir | 56789     | 2024-07-09 | 900000 |
+      | John      | Doe      | QA       | Izmir     | 1234      | 2023-03-08 | 100000 |
+      | Mike      | White    | QA       | Balikesir | 12348     | 2023-04-08 | 200000 |
+      | Candy     | Black    | tester   | izmir     | 4567      | 2023-04-09 | 40000  |
+      | Sue       | Blonde   | tester   | izmir     | 4567      | 2023-07-09 | 60000  |
+      | Smith     | Watson   | sdet     | Balikesir | 56789     | 2024-07-09 | 900000 |
