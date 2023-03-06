@@ -47,7 +47,7 @@ public class Driver {
                 driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
             }
         }
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         driver.manage().window().maximize();
         return driver;
     }

@@ -14,7 +14,7 @@ Feature: Search_Feature
       |Product|
       |Iphone |
       |Samsung|
-      |Xaomi  |
+      |Xiaomi |
       |Huawei |
       |Oppo   |
       |Vivo   |

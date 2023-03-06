@@ -9,8 +9,9 @@ import org.junit.runner.RunWith;
 
         features = "./src/test/resources/features",  //features folder path
         glue =  "stepdefinitions",                   // stepdefinition path
-        tags = "@Scenario_Outline_01",
+        tags = "@Data_Tables",
         dryRun = false
+
 )
 public class Runner {
 
