@@ -37,4 +37,10 @@ public class DataTablesPage {
     @FindBy(id = "DTE_Field_office")
     public WebElement Office;
 
+    @FindBy(xpath = "//input[@type='search']")
+    public WebElement SearchBox;
+
+    @FindBy(xpath = "//tbody//tr[1]//td[2]")
+    public WebElement verifyName;
+
 }

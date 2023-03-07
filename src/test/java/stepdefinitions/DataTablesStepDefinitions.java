@@ -2,6 +2,7 @@ package stepdefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import pages.DataTablesPage;
 import utilities.Driver;
@@ -29,7 +30,7 @@ DataTablesPage dataTablesPage = new DataTablesPage();
 
     @Then("User type the Position {string}")
     public void user_type_the_position(String string) {
-       dataTablesPage.Position.sendKeys(string);
+        dataTablesPage.Position.sendKeys(string);
     }
     @Then("User type the Office {string}")
     public void user_type_the_office(String string) {
@@ -37,7 +38,7 @@ DataTablesPage dataTablesPage = new DataTablesPage();
     }
     @Then("User type the Extension {string}")
     public void user_type_the_extension(String string) {
-       dataTablesPage.Extension.sendKeys(string);
+        dataTablesPage.Extension.sendKeys(string);
     }
     @Then("User type the Start Date {string}")
     public void user_type_the_start_date(String string) {
@@ -53,5 +54,10 @@ DataTablesPage dataTablesPage = new DataTablesPage();
         dataTablesPage.CreateButton.click();
     }
 
+    @Then("Verify the Personal credentials with {string}and{string}")
+    public void verifyThePersonalCredentialsWithAnd(String arg0, String arg1) {
 
+        dataTablesPage.SearchBox.sendKeys(arg0+" "+arg1);
+        Assert.assertTrue(dataTablesPage.verifyName.getText().contains(arg0+" "+arg1));
+    }
 }

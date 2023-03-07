@@ -15,6 +15,7 @@ Feature: Data_Tables_Personal_Credentials
     And User type the Start Date "<Start Date>"
     And User type the Salary "<Salary>"
     Then User clicks the create button
+    Then Verify the Personal credentials with "<FirstName>"and"<LastName>"
 
     Examples:Credentials
       | FirstName | LastName | Position | Office    | Extension | Start Date | Salary |
