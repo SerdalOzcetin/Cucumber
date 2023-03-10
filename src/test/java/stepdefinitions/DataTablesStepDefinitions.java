@@ -5,12 +5,13 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import pages.DataTablesPage;
+import utilities.ConfigReader;
 import utilities.Driver;
 
 public class DataTablesStepDefinitions {
 DataTablesPage dataTablesPage = new DataTablesPage();
     @Given("User Navigates to {string}")
-    public void user_navigates_to(String string) throws InterruptedException {
+    public void user_navigates_to(String string) {
         Driver.getDriver().get(string);
     }
 

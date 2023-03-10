@@ -19,7 +19,7 @@ import org.junit.runner.RunWith;
         features = "./src/test/resources/features",  //features folder path
         glue =  "stepdefinitions",                   // stepdefinition path
         tags = "@Datatables02",
-        dryRun = true
+        dryRun = false
 
 )
 public class Runner {

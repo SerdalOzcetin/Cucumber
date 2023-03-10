@@ -5,4 +5,5 @@ Feature: Datatables02
     Given User Navigates to "https://www.bluerentalcars.com/login"
     When User types the email and password
       | email                         | password  |
-      | sam.walker.bluerentalcars.com | c!fas_art |
+      | sam.walker@bluerentalcars.com | c!fas_art |
+    Then User hits the login button

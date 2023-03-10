@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="1.044" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="Datatables02" name="Datatables02" time="0.086">
-<failure/>
+<testsuite name="Cucumber" time="10.302" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Datatables02" name="Datatables02" time="9.688">
 <system-out><![CDATA[
 Given User Navigates to "https://www.bluerentalcars.com/login"..............passed
-When User types the email and password......................................undefined
+When User types the email and password......................................passed
+Then User hits the login button.............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
