@@ -1,10 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="19.371" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Datatables02" name="Datatables02" time="18.758">
+<testsuite name="Cucumber" time="42.748" tests="2" skipped="0" failures="1" errors="0">
+<testcase classname="to test the hooks" name="TC01_Google_İphone_Search" time="22.495">
 <system-out><![CDATA[
-Given User Navigates to "BlueRentalCars_Url"................................passed
-When User types the email and password......................................passed
-Then User hits the login button.............................................passed
+Given User Navigates to "google_url"........................................passed
+Given User searchs for "İphone" ın searchbox................................passed
+Then Verify the results contain "İphone"....................................passed
+Then Close the application..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="to test the hooks" name="TC01_Google_Volvo_Search" time="18.822">
+<failure type="org.openqa.selenium.WebDriverException" message="unknown error: failed to change window state to 'normal', current state is 'maximized'
+  (Session info: chrome=111.0.5563.64)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [73094d53531687ce731dce7c4d7f33d2, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\asus\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51013}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51013/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 73094d53531687ce731dce7c4d7f33d2">
+<![CDATA[org.openqa.selenium.WebDriverException: unknown error: failed to change window state to 'normal', current state is 'maximized'
+  (Session info: chrome=111.0.5563.64)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [73094d53531687ce731dce7c4d7f33d2, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\asus\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51013}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51013/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 73094d53531687ce731dce7c4d7f33d2
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:954)
+	at utilities.Driver.getDriver(Driver.java:53)
+	at stepdefinitions.GoogleStepDefinitions.verify_the_results_contain(GoogleStepDefinitions.java:66)
+	at ✽.Verify the results contain "PencilCom"(file:///C:/Users/asus/IdeaProjects/Cucumber/./src/test/resources/features/failed_scenarios.feature:13)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User Navigates to "google_url"........................................passed
+Given User searchs for "Volvo" ın searchbox.................................passed
+Then Verify the results contain "PencilCom".................................failed
+Then Close the application..................................................skipped
 ]]></system-out>
 </testcase>
 </testsuite>

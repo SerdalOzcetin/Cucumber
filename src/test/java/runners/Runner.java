@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
 
         features = "./src/test/resources/features",            //features folder path
         glue = {"stepdefinitions","hooks"},                   // stepdefinition path
-        tags = "@Datatables02",
+        tags = "@failed_scenario",
         dryRun = false
 
 )
