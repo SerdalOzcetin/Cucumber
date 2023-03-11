@@ -12,7 +12,7 @@ public class DataTablesStepDefinitions {
 DataTablesPage dataTablesPage = new DataTablesPage();
     @Given("User Navigates to {string}")
     public void user_navigates_to(String string) {
-        Driver.getDriver().get(string);
+        Driver.getDriver().get(ConfigReader.getProperty("BlueRentalCars_Url"));
     }
 
     @Then("User clicks the new button")

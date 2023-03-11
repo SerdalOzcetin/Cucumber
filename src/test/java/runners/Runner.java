@@ -16,13 +16,13 @@ import org.junit.runner.RunWith;
 
         monochrome = true,
 
-        features = "./src/test/resources/features",  //features folder path
-        glue =  "stepdefinitions",                   // stepdefinition path
+        features = "./src/test/resources/features",            //features folder path
+        glue = {"stepdefinitions","hooks"},                   // stepdefinition path
         tags = "@Datatables02",
         dryRun = false
 
 )
-public class Runner {
+public class Runner{
 
     // BU sinif Test çaseleri RUN etmek icin kullanilir
     // Ve konfiguraşyonlar icin kullanilir

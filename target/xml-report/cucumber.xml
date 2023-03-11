@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="10.302" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Datatables02" name="Datatables02" time="9.688">
+<testsuite name="Cucumber" time="19.371" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Datatables02" name="Datatables02" time="18.758">
 <system-out><![CDATA[
-Given User Navigates to "https://www.bluerentalcars.com/login"..............passed
+Given User Navigates to "BlueRentalCars_Url"................................passed
 When User types the email and password......................................passed
 Then User hits the login button.............................................passed
 ]]></system-out>
