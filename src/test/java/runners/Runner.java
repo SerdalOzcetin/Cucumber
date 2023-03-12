@@ -18,13 +18,13 @@ import org.junit.runner.RunWith;
 
         features = "./src/test/resources/features",            //features folder path
         glue = {"stepdefinitions","hooks"},                   // stepdefinition path
-        tags = "@failed_scenario",
+        tags = "@Excel_automation",
         dryRun = false
 
 )
 public class Runner{
 
-    // BU sinif Test çaseleri RUN etmek icin kullanilir
-    // Ve konfiguraşyonlar icin kullanilir
+        // Thic class is used to run the Test cases
+        // and configurations
 
 }
