@@ -15,15 +15,16 @@ public class ExcelStepDefinitions {
 
     BlueRental_HomaPage blueRental_homaPage;
     BlueRental_LoginPage blueRental_loginPage;
+
     ExcelUtils excelUtils;
     List<Map<String,String>> excelDatas;
     @When("User logs in with {string}")
-    public void userLogsInWith(String arg0) throws IOException {
+    public void userLogsInWith(String sheetName) throws IOException {
 
         String path ="C:\\Users\\asus\\IdeaProjects\\Cucumber\\src\\test\\resources\\testData\\mysmoketestdata.xlsx";
-        String sayfa = "customer_info";
+         // String sayfa = "customer_info";
 
-        excelUtils = new ExcelUtils(path, sayfa);
+        excelUtils = new ExcelUtils(path, sheetName);
         excelDatas = excelUtils.getDataList();
 
         // home page hit the Login Button

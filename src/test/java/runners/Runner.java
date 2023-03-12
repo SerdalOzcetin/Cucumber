@@ -11,14 +11,15 @@ import org.junit.runner.RunWith;
                 "pretty",
                 "html:target/default-cucumber-reports.html",
                 "json:target/json-reports/cucumber.json",
-                "junit:target/xml-report/cucumber.xml"
+                "junit:target/xml-report/cucumber.xml",
+                "rerun:target/failed_scenarios.txt"
         },
 
         monochrome = true,
 
         features = "./src/test/resources/features",            //features folder path
         glue = {"stepdefinitions","hooks"},                   // stepdefinition path
-        tags = "@Excel_automation",
+        tags = "@failed_scenario",
         dryRun = false
 
 )

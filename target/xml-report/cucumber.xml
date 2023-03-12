@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="53.92" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Excel_Login" name="TC01_Customer_Login_Test" time="52.848">
+<testsuite name="Cucumber" time="20.33" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="to test the hooks" name="TC01_Google_Volvo_Search" time="19.17">
+<failure type="java.lang.AssertionError">
+<![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.GoogleStepDefinitions.verify_the_results_contain(GoogleStepDefinitions.java:67)
+	at ✽.Verify the results contain "PencilCom"(file:///C:/Users/asus/IdeaProjects/Cucumber/src/test/resources/features/failed_scenarios.feature:13)
+]]>
+</failure>
 <system-out><![CDATA[
-Given User Navigates to "BlueRentalCars_Url"................................passed
-When User logs in with "customer_info"......................................passed
+Given User Navigates to "google_url"........................................passed
+Given User searchs for "Volvo" ın searchbox.................................passed
+Then Verify the results contain "PencilCom".................................failed
+Then Close the application..................................................skipped
 ]]></system-out>
 </testcase>
 </testsuite>
