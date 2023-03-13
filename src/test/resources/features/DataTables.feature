@@ -2,9 +2,10 @@
 Feature: Data_Tables_Personal_Credentials
 
   Background: Data_Tables
-    Given User Navigates to "https://editor.datatables.net/"
+    Given User Navigates to "data_tables"
     Then User clicks the new button
 
+    @test_runner
   Scenario Outline: TC01_Data_Tables_Personal_Credentials
 
     And User type the first name "<FirstName>"
