@@ -1,78 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="32.249" tests="5" skipped="0" failures="0" errors="0">
-<testcase classname="Data_Tables_Personal_Credentials" name="TC01_Data_Tables_Personal_Credentials - Credentials - Example #1.1" time="14.826">
+<testsuite name="Cucumber" time="87.947" tests="4" skipped="0" failures="0" errors="0">
+<testcase classname="Search_feature" name="TC01_Google_Iphone_search" time="11.58">
 <system-out><![CDATA[
-Given User Navigates to "data_tables".......................................passed
-Then User clicks the new button.............................................passed
-And User type the first name "John".........................................passed
-And User type the last name "Doe"...........................................passed
-And User type the Position "QA".............................................passed
-And User type the Office "Izmir"............................................passed
-And User type the Extension "1234"..........................................passed
-And User type the Start Date "2023-03-08"...................................passed
-And User type the Salary "100000"...........................................passed
-Then User clicks the create button..........................................passed
-Then Verify the Personal credentials with "John"and"Doe"....................passed
+Given User goes to Google...................................................passed
+When User searchs for "Iphone" ın searchbox.................................passed
+Then Verify the results contain "Iphone"....................................passed
+Then Close the application..................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Data_Tables_Personal_Credentials" name="TC01_Data_Tables_Personal_Credentials - Credentials - Example #1.2" time="3.937">
+<testcase classname="Search_feature" name="TC02_Google_Mercedes_search" time="35.203">
 <system-out><![CDATA[
-Given User Navigates to "data_tables".......................................passed
-Then User clicks the new button.............................................passed
-And User type the first name "Mike".........................................passed
-And User type the last name "White".........................................passed
-And User type the Position "QA".............................................passed
-And User type the Office "Balikesir"........................................passed
-And User type the Extension "12348".........................................passed
-And User type the Start Date "2023-04-08"...................................passed
-And User type the Salary "200000"...........................................passed
-Then User clicks the create button..........................................passed
-Then Verify the Personal credentials with "Mike"and"White"..................passed
+Given User goes to Google...................................................passed
+When User searchs for "Mercedes" ın searchbox...............................passed
+Then Verify the results contain "Mercedes"..................................passed
+Then Close the application..................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Data_Tables_Personal_Credentials" name="TC01_Data_Tables_Personal_Credentials - Credentials - Example #1.3" time="3.713">
+<testcase classname="Search_feature" name="TC03_Google_Cadillac_search" time="9.571">
 <system-out><![CDATA[
-Given User Navigates to "data_tables".......................................passed
-Then User clicks the new button.............................................passed
-And User type the first name "Candy"........................................passed
-And User type the last name "Black".........................................passed
-And User type the Position "tester".........................................passed
-And User type the Office "izmir"............................................passed
-And User type the Extension "4567"..........................................passed
-And User type the Start Date "2023-04-09"...................................passed
-And User type the Salary "40000"............................................passed
-Then User clicks the create button..........................................passed
-Then Verify the Personal credentials with "Candy"and"Black".................passed
+Given User goes to Google...................................................passed
+When User searchs for "Cadillac" ın searchbox...............................passed
+Then Verify the results contain "Cadillac"..................................passed
+Then Close the application..................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Data_Tables_Personal_Credentials" name="TC01_Data_Tables_Personal_Credentials - Credentials - Example #1.4" time="4.793">
+<testcase classname="Search_feature" name="TC04_Google_Mustang_search" time="31.507">
 <system-out><![CDATA[
-Given User Navigates to "data_tables".......................................passed
-Then User clicks the new button.............................................passed
-And User type the first name "Sue"..........................................passed
-And User type the last name "Blonde"........................................passed
-And User type the Position "tester".........................................passed
-And User type the Office "izmir"............................................passed
-And User type the Extension "4567"..........................................passed
-And User type the Start Date "2023-07-09"...................................passed
-And User type the Salary "60000"............................................passed
-Then User clicks the create button..........................................passed
-Then Verify the Personal credentials with "Sue"and"Blonde"..................passed
-]]></system-out>
-</testcase>
-<testcase classname="Data_Tables_Personal_Credentials" name="TC01_Data_Tables_Personal_Credentials - Credentials - Example #1.5" time="3.792">
-<system-out><![CDATA[
-Given User Navigates to "data_tables".......................................passed
-Then User clicks the new button.............................................passed
-And User type the first name "Smith"........................................passed
-And User type the last name "Watson"........................................passed
-And User type the Position "sdet"...........................................passed
-And User type the Office "Balikesir"........................................passed
-And User type the Extension "56789".........................................passed
-And User type the Start Date "2024-07-09"...................................passed
-And User type the Salary "900000"...........................................passed
-Then User clicks the create button..........................................passed
-Then Verify the Personal credentials with "Smith"and"Watson"................passed
+Given User goes to Google...................................................passed
+When User searchs for "Mustang" ın searchbox................................passed
+Then Verify the results contain "Mustang"...................................passed
+Then Close the application..................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

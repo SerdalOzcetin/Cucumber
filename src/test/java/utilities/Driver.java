@@ -1,5 +1,4 @@
 package utilities;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -31,23 +30,17 @@ public class Driver {
         if (driver == null) {
             String browser = ConfigReader.getProperty("browser");
             if ("chrome".equals(browser)) {
-                ChromeOptions co = new ChromeOptions();
-                co.addArguments("---remote-allow-origins=*");
-                WebDriverManager.chromedriver().setup();
-                driver = new ChromeDriver(co);
+                driver = new ChromeDriver();
             } else if ("firefox".equals(browser)) {
-                WebDriverManager.firefoxdriver().setup();
                 driver = new FirefoxDriver();
             } else if ("edge".equals(browser)) {
-                WebDriverManager.edgedriver().setup();
                 driver = new EdgeDriver();
             } else if ("safari".equals(browser)) {
-                WebDriverManager.getInstance(SafariDriver.class).setup();
                 driver = new SafariDriver();
-            } else if ("chrome-headless".equals(browser)) {
-                WebDriverManager.chromedriver().setup();
-                driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
-            }
+            } // else if ("chrome-headless".equals(browser)) {
+               // WebDriverManager.chromedriver().setup();
+               // driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
+           // }
         }
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         driver.manage().window().maximize();
